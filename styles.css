@@ -1,0 +1,61 @@
+
+
+.container {
+              
+
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: auto;
+
+
+
+ }
+
+
+ .drone {
+  width: 512px;
+  height: 512px;
+  position: relative;
+  background-image: url('drone.png');
+  animation-iteration-count: 1;
+  -moz-animation: animationFrames linear 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-delay: 1s;
+  
+  
+}
+
+
+@-moz-keyframes animationFrames{
+  0% {
+    background-image: url('drone.png');
+    
+  }
+  30% {
+    background-image: url('drone1.png');
+    
+    transform: translate3D(100px, 150px, 80px);
+    transform: rotate(5deg);
+  }
+
+
+  70% {
+
+    background-image: url('drone2.png');
+    transform: translate3D(-50px, 5px, 30px);
+    
+  }
+  100% {
+    background-image: url('drone3.png');
+    
+  }
+
+
+@-moz-keyframes fadein{
+    0% { opacity: 0; }
+    100%   { opacity: 1; }
+}
+
+}
+
